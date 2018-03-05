@@ -8,7 +8,7 @@
 
 import UIKit
 
-class IndexViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
+class HomeViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
 
     let logo = UIImageView(image: UIImage(named: "adjaranet"))
     
@@ -22,22 +22,35 @@ class IndexViewController: UIViewController, UITableViewDataSource, UITableViewD
         
         tableView.delegate = self
         tableView.dataSource = self
-        
-        tableView.separatorStyle = .none
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 1
+        return 5
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "SectionCellId", for: indexPath) as! SectionCell
         
-        return cell
+        if indexPath.row == 0 {
+            let cell = tableView.dequeueReusableCell(withIdentifier: "HeaderTableViewCellId", for: indexPath) as! HeaderTableViewCell
+            
+            cell.collectionView.collectionViewLayout.invalidateLayout()
+            
+            return cell
+        } else {
+            let cell = tableView.dequeueReusableCell(withIdentifier: "SectionTableViewCellId", for: indexPath) as! SectionTableViewCell
+            
+            cell.collectionView.collectionViewLayout.invalidateLayout()
+            
+            return cell
+        }
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return (9 * view.frame.width) / 16
+    }
+    
+    override func viewWillTransition(to size: CGSize, with coordinator: UIViewControllerTransitionCoordinator) {
+        tableView.reloadData()
     }
 }
 

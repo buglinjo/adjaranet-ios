@@ -41,5 +41,10 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
+	<key>UIAppFonts</key>
+	<array>
+		<string>DejaVuSans.ttf</string>
+		<string>BPGNinoMtavruliBook.ttf</string>
+	</array>
 </dict>
 </plist>

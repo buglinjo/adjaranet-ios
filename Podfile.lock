@@ -1,0 +1,30 @@
+PODS:
+  - Alamofire (4.6.0)
+  - HTMLEntities (3.0.9)
+  - Kingfisher (4.6.2)
+  - SwiftyJSON (4.0.0)
+
+DEPENDENCIES:
+  - Alamofire (~> 4.5)
+  - HTMLEntities (from `https://github.com/IBM-Swift/swift-html-entities.git`)
+  - Kingfisher (~> 4.0)
+  - SwiftyJSON
+
+EXTERNAL SOURCES:
+  HTMLEntities:
+    :git: https://github.com/IBM-Swift/swift-html-entities.git
+
+CHECKOUT OPTIONS:
+  HTMLEntities:
+    :commit: 98e7f5d9e5aed8cb43bcf2a07b81e52c4adf25b5
+    :git: https://github.com/IBM-Swift/swift-html-entities.git
+
+SPEC CHECKSUMS:
+  Alamofire: f41a599bd63041760b26d393ec1069d9d7b917f4
+  HTMLEntities: f117de937598406671591baa7829479213d4e4c2
+  Kingfisher: 55b9c395bf8d3949676ad3861111923990ab68cf
+  SwiftyJSON: 070dabdcb1beb81b247c65ffa3a79dbbfb3b48aa
+
+PODFILE CHECKSUM: 81b545e377d11f8b3ee09885a20c13f1e0c3ac5c
+
+COCOAPODS: 1.4.0

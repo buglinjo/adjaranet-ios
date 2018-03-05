@@ -7,27 +7,69 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		8F8193FA203F159100097E94 /* SectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F8193F9203F159100097E94 /* SectionCell.swift */; };
-		8F819400203F244E00097E94 /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F8193FF203F244E00097E94 /* CollectionViewCell.swift */; };
+		2F3EA15B806B4E4CC46EF8E5 /* Pods_adjaranet_ios.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CCDF57D1A932853103DB3333 /* Pods_adjaranet_ios.framework */; };
+		8F8193FA203F159100097E94 /* HeaderTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F8193F9203F159100097E94 /* HeaderTableViewCell.swift */; };
+		8F819400203F244E00097E94 /* SlideCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F8193FF203F244E00097E94 /* SlideCollectionViewCell.swift */; };
 		9B04E2A8203E5A68004831F8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B04E2A7203E5A68004831F8 /* AppDelegate.swift */; };
-		9B04E2AA203E5A68004831F8 /* IndexViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B04E2A9203E5A68004831F8 /* IndexViewController.swift */; };
+		9B04E2AA203E5A68004831F8 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B04E2A9203E5A68004831F8 /* HomeViewController.swift */; };
 		9B04E2AD203E5A68004831F8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9B04E2AB203E5A68004831F8 /* Main.storyboard */; };
 		9B04E2B0203E5A68004831F8 /* adjaranet_ios.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9B04E2AE203E5A68004831F8 /* adjaranet_ios.xcdatamodeld */; };
 		9B04E2B2203E5A68004831F8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9B04E2B1203E5A68004831F8 /* Assets.xcassets */; };
 		9B04E2B5203E5A68004831F8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9B04E2B3203E5A68004831F8 /* LaunchScreen.storyboard */; };
+		9B8846B1204CFD0B007AC781 /* Search.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B8846A4204CFD0A007AC781 /* Search.swift */; };
+		9B8846B2204CFD0B007AC781 /* Episode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B8846A5204CFD0B007AC781 /* Episode.swift */; };
+		9B8846B3204CFD0B007AC781 /* Season.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B8846A6204CFD0B007AC781 /* Season.swift */; };
+		9B8846B4204CFD0B007AC781 /* Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B8846A7204CFD0B007AC781 /* Image.swift */; };
+		9B8846B5204CFD0B007AC781 /* Language.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B8846A8204CFD0B007AC781 /* Language.swift */; };
+		9B8846B6204CFD0B007AC781 /* Api.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B8846A9204CFD0B007AC781 /* Api.swift */; };
+		9B8846B7204CFD0B007AC781 /* Rating.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B8846AA204CFD0B007AC781 /* Rating.swift */; };
+		9B8846B8204CFD0B007AC781 /* Title.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B8846AB204CFD0B007AC781 /* Title.swift */; };
+		9B8846B9204CFD0B007AC781 /* Celebrity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B8846AC204CFD0B007AC781 /* Celebrity.swift */; };
+		9B8846BA204CFD0B007AC781 /* Quality.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B8846AD204CFD0B007AC781 /* Quality.swift */; };
+		9B8846BB204CFD0B007AC781 /* Section.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B8846AE204CFD0B007AC781 /* Section.swift */; };
+		9B8846BC204CFD0B007AC781 /* Details.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B8846AF204CFD0B007AC781 /* Details.swift */; };
+		9B8846BD204CFD0B007AC781 /* Video.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B8846B0204CFD0B007AC781 /* Video.swift */; };
+		9BCA7555204CFFA80056DCB2 /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BCA7553204CFFA80056DCB2 /* Helpers.swift */; };
+		9BCA7556204CFFA80056DCB2 /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BCA7554204CFFA80056DCB2 /* Reachability.swift */; };
+		9BE1CF55204D07FA00F35939 /* DejaVuSans.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9BE1CF53204D07FA00F35939 /* DejaVuSans.ttf */; };
+		9BE1CF56204D07FA00F35939 /* BPGNinoMtavruliBook.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9BE1CF54204D07FA00F35939 /* BPGNinoMtavruliBook.ttf */; };
+		9BEF6FCF204CE05100378B37 /* SectionCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BEF6FCE204CE05100378B37 /* SectionCollectionViewCell.swift */; };
+		9BEF6FD1204CE1FE00378B37 /* SectionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BEF6FD0204CE1FE00378B37 /* SectionTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		8F8193F9203F159100097E94 /* SectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionCell.swift; sourceTree = "<group>"; };
-		8F8193FF203F244E00097E94 /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
+		6538024B58284B6873D71F3A /* Pods-adjaranet-ios.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-adjaranet-ios.release.xcconfig"; path = "Pods/Target Support Files/Pods-adjaranet-ios/Pods-adjaranet-ios.release.xcconfig"; sourceTree = "<group>"; };
+		733F2419F5A5180F53CC54B2 /* Pods-adjaranet-ios.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-adjaranet-ios.debug.xcconfig"; path = "Pods/Target Support Files/Pods-adjaranet-ios/Pods-adjaranet-ios.debug.xcconfig"; sourceTree = "<group>"; };
+		8F8193F9203F159100097E94 /* HeaderTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderTableViewCell.swift; sourceTree = "<group>"; };
+		8F8193FF203F244E00097E94 /* SlideCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlideCollectionViewCell.swift; sourceTree = "<group>"; };
 		9B04E2A4203E5A68004831F8 /* adjaranet-ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "adjaranet-ios.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9B04E2A7203E5A68004831F8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		9B04E2A9203E5A68004831F8 /* IndexViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IndexViewController.swift; sourceTree = "<group>"; };
+		9B04E2A9203E5A68004831F8 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		9B04E2AC203E5A68004831F8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9B04E2AF203E5A68004831F8 /* adjaranet_ios.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = adjaranet_ios.xcdatamodel; sourceTree = "<group>"; };
 		9B04E2B1203E5A68004831F8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9B04E2B4203E5A68004831F8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9B04E2B6203E5A68004831F8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9B8846A4204CFD0A007AC781 /* Search.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Search.swift; sourceTree = "<group>"; };
+		9B8846A5204CFD0B007AC781 /* Episode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Episode.swift; sourceTree = "<group>"; };
+		9B8846A6204CFD0B007AC781 /* Season.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Season.swift; sourceTree = "<group>"; };
+		9B8846A7204CFD0B007AC781 /* Image.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Image.swift; sourceTree = "<group>"; };
+		9B8846A8204CFD0B007AC781 /* Language.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Language.swift; sourceTree = "<group>"; };
+		9B8846A9204CFD0B007AC781 /* Api.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Api.swift; sourceTree = "<group>"; };
+		9B8846AA204CFD0B007AC781 /* Rating.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Rating.swift; sourceTree = "<group>"; };
+		9B8846AB204CFD0B007AC781 /* Title.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Title.swift; sourceTree = "<group>"; };
+		9B8846AC204CFD0B007AC781 /* Celebrity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Celebrity.swift; sourceTree = "<group>"; };
+		9B8846AD204CFD0B007AC781 /* Quality.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Quality.swift; sourceTree = "<group>"; };
+		9B8846AE204CFD0B007AC781 /* Section.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Section.swift; sourceTree = "<group>"; };
+		9B8846AF204CFD0B007AC781 /* Details.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Details.swift; sourceTree = "<group>"; };
+		9B8846B0204CFD0B007AC781 /* Video.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Video.swift; sourceTree = "<group>"; };
+		9BCA7553204CFFA80056DCB2 /* Helpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Helpers.swift; sourceTree = "<group>"; };
+		9BCA7554204CFFA80056DCB2 /* Reachability.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
+		9BE1CF53204D07FA00F35939 /* DejaVuSans.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = DejaVuSans.ttf; sourceTree = "<group>"; };
+		9BE1CF54204D07FA00F35939 /* BPGNinoMtavruliBook.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = BPGNinoMtavruliBook.ttf; sourceTree = "<group>"; };
+		9BEF6FCE204CE05100378B37 /* SectionCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionCollectionViewCell.swift; sourceTree = "<group>"; };
+		9BEF6FD0204CE1FE00378B37 /* SectionTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionTableViewCell.swift; sourceTree = "<group>"; };
+		CCDF57D1A932853103DB3333 /* Pods_adjaranet_ios.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_adjaranet_ios.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,32 +77,36 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2F3EA15B806B4E4CC46EF8E5 /* Pods_adjaranet_ios.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0E58F8EBB7C0978B3FDE6B04 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CCDF57D1A932853103DB3333 /* Pods_adjaranet_ios.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		8F8193FB203F1A4700097E94 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				9B04E2A9203E5A68004831F8 /* IndexViewController.swift */,
+				9B04E2A9203E5A68004831F8 /* HomeViewController.swift */,
 			);
 			path = Controllers;
-			sourceTree = "<group>";
-		};
-		8F8193FC203F1A4F00097E94 /* Models */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Models;
 			sourceTree = "<group>";
 		};
 		8F8193FE203F1A9D00097E94 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				8F8193F9203F159100097E94 /* SectionCell.swift */,
-				8F8193FF203F244E00097E94 /* CollectionViewCell.swift */,
+				8F8193F9203F159100097E94 /* HeaderTableViewCell.swift */,
+				8F8193FF203F244E00097E94 /* SlideCollectionViewCell.swift */,
+				9BEF6FD0204CE1FE00378B37 /* SectionTableViewCell.swift */,
+				9BEF6FCE204CE05100378B37 /* SectionCollectionViewCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -70,6 +116,8 @@
 			children = (
 				9B04E2A6203E5A68004831F8 /* adjaranet-ios */,
 				9B04E2A5203E5A68004831F8 /* Products */,
+				AF8F2574E2E5DA3C8BBEACC7 /* Pods */,
+				0E58F8EBB7C0978B3FDE6B04 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -85,16 +133,65 @@
 			isa = PBXGroup;
 			children = (
 				8F8193FB203F1A4700097E94 /* Controllers */,
-				8F8193FC203F1A4F00097E94 /* Models */,
 				8F8193FE203F1A9D00097E94 /* Views */,
+				9B9C3789204CC5FA00C4B28E /* Models */,
+				9B8846C1204CFD5B007AC781 /* Helpers */,
 				9B04E2A7203E5A68004831F8 /* AppDelegate.swift */,
-				9B04E2AB203E5A68004831F8 /* Main.storyboard */,
 				9B04E2B1203E5A68004831F8 /* Assets.xcassets */,
+				9BE1CF52204D079C00F35939 /* Fonts */,
+				9B04E2AB203E5A68004831F8 /* Main.storyboard */,
 				9B04E2B3203E5A68004831F8 /* LaunchScreen.storyboard */,
 				9B04E2B6203E5A68004831F8 /* Info.plist */,
 				9B04E2AE203E5A68004831F8 /* adjaranet_ios.xcdatamodeld */,
 			);
 			path = "adjaranet-ios";
+			sourceTree = "<group>";
+		};
+		9B8846C1204CFD5B007AC781 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				9BCA7553204CFFA80056DCB2 /* Helpers.swift */,
+				9BCA7554204CFFA80056DCB2 /* Reachability.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		9B9C3789204CC5FA00C4B28E /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				9B8846A9204CFD0B007AC781 /* Api.swift */,
+				9B8846AC204CFD0B007AC781 /* Celebrity.swift */,
+				9B8846AF204CFD0B007AC781 /* Details.swift */,
+				9B8846A5204CFD0B007AC781 /* Episode.swift */,
+				9B8846A7204CFD0B007AC781 /* Image.swift */,
+				9B8846A8204CFD0B007AC781 /* Language.swift */,
+				9B8846AD204CFD0B007AC781 /* Quality.swift */,
+				9B8846AA204CFD0B007AC781 /* Rating.swift */,
+				9B8846A4204CFD0A007AC781 /* Search.swift */,
+				9B8846A6204CFD0B007AC781 /* Season.swift */,
+				9B8846AE204CFD0B007AC781 /* Section.swift */,
+				9B8846AB204CFD0B007AC781 /* Title.swift */,
+				9B8846B0204CFD0B007AC781 /* Video.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		9BE1CF52204D079C00F35939 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				9BE1CF54204D07FA00F35939 /* BPGNinoMtavruliBook.ttf */,
+				9BE1CF53204D07FA00F35939 /* DejaVuSans.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		AF8F2574E2E5DA3C8BBEACC7 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				733F2419F5A5180F53CC54B2 /* Pods-adjaranet-ios.debug.xcconfig */,
+				6538024B58284B6873D71F3A /* Pods-adjaranet-ios.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -104,9 +201,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9B04E2B9203E5A68004831F8 /* Build configuration list for PBXNativeTarget "adjaranet-ios" */;
 			buildPhases = (
+				D0C4D0DB2931DAD0629DA961 /* [CP] Check Pods Manifest.lock */,
 				9B04E2A0203E5A68004831F8 /* Sources */,
 				9B04E2A1203E5A68004831F8 /* Frameworks */,
 				9B04E2A2203E5A68004831F8 /* Resources */,
+				F35953A4AA127FA26F97A070 /* [CP] Embed Pods Frameworks */,
+				55D913D417C8E28016FAD7A6 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -157,23 +257,102 @@
 			buildActionMask = 2147483647;
 			files = (
 				9B04E2B5203E5A68004831F8 /* LaunchScreen.storyboard in Resources */,
+				9BE1CF56204D07FA00F35939 /* BPGNinoMtavruliBook.ttf in Resources */,
 				9B04E2B2203E5A68004831F8 /* Assets.xcassets in Resources */,
+				9BE1CF55204D07FA00F35939 /* DejaVuSans.ttf in Resources */,
 				9B04E2AD203E5A68004831F8 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		55D913D417C8E28016FAD7A6 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-adjaranet-ios/Pods-adjaranet-ios-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D0C4D0DB2931DAD0629DA961 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-adjaranet-ios-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F35953A4AA127FA26F97A070 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-adjaranet-ios/Pods-adjaranet-ios-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/HTMLEntities/HTMLEntities.framework",
+				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/HTMLEntities.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-adjaranet-ios/Pods-adjaranet-ios-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		9B04E2A0203E5A68004831F8 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8F819400203F244E00097E94 /* CollectionViewCell.swift in Sources */,
+				9B8846BA204CFD0B007AC781 /* Quality.swift in Sources */,
+				9BCA7555204CFFA80056DCB2 /* Helpers.swift in Sources */,
+				8F819400203F244E00097E94 /* SlideCollectionViewCell.swift in Sources */,
+				9BEF6FD1204CE1FE00378B37 /* SectionTableViewCell.swift in Sources */,
+				9B8846B3204CFD0B007AC781 /* Season.swift in Sources */,
 				9B04E2B0203E5A68004831F8 /* adjaranet_ios.xcdatamodeld in Sources */,
-				8F8193FA203F159100097E94 /* SectionCell.swift in Sources */,
-				9B04E2AA203E5A68004831F8 /* IndexViewController.swift in Sources */,
+				8F8193FA203F159100097E94 /* HeaderTableViewCell.swift in Sources */,
+				9B04E2AA203E5A68004831F8 /* HomeViewController.swift in Sources */,
+				9B8846B7204CFD0B007AC781 /* Rating.swift in Sources */,
+				9B8846B6204CFD0B007AC781 /* Api.swift in Sources */,
+				9B8846BD204CFD0B007AC781 /* Video.swift in Sources */,
+				9B8846BB204CFD0B007AC781 /* Section.swift in Sources */,
+				9B8846BC204CFD0B007AC781 /* Details.swift in Sources */,
+				9B8846B1204CFD0B007AC781 /* Search.swift in Sources */,
 				9B04E2A8203E5A68004831F8 /* AppDelegate.swift in Sources */,
+				9B8846B8204CFD0B007AC781 /* Title.swift in Sources */,
+				9B8846B2204CFD0B007AC781 /* Episode.swift in Sources */,
+				9B8846B5204CFD0B007AC781 /* Language.swift in Sources */,
+				9BCA7556204CFFA80056DCB2 /* Reachability.swift in Sources */,
+				9B8846B9204CFD0B007AC781 /* Celebrity.swift in Sources */,
+				9B8846B4204CFD0B007AC781 /* Image.swift in Sources */,
+				9BEF6FCF204CE05100378B37 /* SectionCollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -308,6 +487,7 @@
 		};
 		9B04E2BA203E5A68004831F8 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 733F2419F5A5180F53CC54B2 /* Pods-adjaranet-ios.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -323,6 +503,7 @@
 		};
 		9B04E2BB203E5A68004831F8 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6538024B58284B6873D71F3A /* Pods-adjaranet-ios.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
