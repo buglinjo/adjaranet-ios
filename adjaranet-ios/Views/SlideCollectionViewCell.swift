@@ -14,12 +14,6 @@ class SlideCollectionViewCell: UICollectionViewCell {
     @IBOutlet weak var titleGeoTextView: UILabel!
     @IBOutlet weak var titleEngTextView: UILabel!
     
-    override func awakeFromNib() {
-        super.awakeFromNib()
-        
-        setupLayout()
-    }
-    
     let gradientLayer: CAGradientLayer = {
         let gl = CAGradientLayer()
         
@@ -30,14 +24,20 @@ class SlideCollectionViewCell: UICollectionViewCell {
         return gl
     }()
     
+    override func layoutSubviews() {
+        super.layoutSubviews()
+        
+        setupLayout()
+    }
+    
     func setupLayout() {
         self.titleGeoTextView = addShadow(label: titleGeoTextView)
         self.titleEngTextView = addShadow(label: titleEngTextView)
+        
         imageView.backgroundColor = UIColor.red
         
-        print(self.contentView.frame.width, self.contentView.frame.height)
-//        gradientLayer.frame = self.layer.bounds
-        imageView.layer.insertSublayer(gradientLayer, at: 0)
+        gradientLayer.frame = self.layer.bounds
+        imageView.layer.addSublayer(gradientLayer)
     }
     
     func addShadow(label: UILabel) -> UILabel {

@@ -9,9 +9,9 @@
 import UIKit
 
 class SectionCollectionViewCell: UICollectionViewCell {
-    override func awakeFromNib() {
-        super.awakeFromNib()
-        
-        backgroundColor = .blue
+    override func layoutSubviews() {
+        super.layoutSubviews()
+    
+        backgroundColor = .lightGray
     }
 }

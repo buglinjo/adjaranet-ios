@@ -19,6 +19,10 @@ class HeaderTableViewCell: UITableViewCell, UICollectionViewDataSource, UICollec
         collectionView.dataSource = self
     }
     
+    func collectionView(_ collectionView: UICollectionView, targetContentOffsetForProposedContentOffset proposedContentOffset: CGPoint) -> CGPoint {
+        return CGPoint(x: 0, y: 0)
+    }
+    
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return 5
     }
