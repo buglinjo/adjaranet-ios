@@ -34,7 +34,7 @@ class SlideCollectionViewCell: UICollectionViewCell {
         self.titleGeoTextView = addShadow(label: titleGeoTextView)
         self.titleEngTextView = addShadow(label: titleEngTextView)
         
-        imageView.backgroundColor = UIColor.red
+        imageView.backgroundColor = .darkGray
         
         gradientLayer.frame = self.layer.bounds
         imageView.layer.addSublayer(gradientLayer)
