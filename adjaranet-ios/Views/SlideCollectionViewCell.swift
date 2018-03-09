@@ -31,22 +31,10 @@ class SlideCollectionViewCell: UICollectionViewCell {
     }
     
     func setupLayout() {
-        self.titleGeoTextView = addShadow(label: titleGeoTextView)
-        self.titleEngTextView = addShadow(label: titleEngTextView)
-        
-        imageView.backgroundColor = .darkGray
-        
         gradientLayer.frame = self.layer.bounds
         imageView.layer.addSublayer(gradientLayer)
-    }
-    
-    func addShadow(label: UILabel) -> UILabel {
-        label.layer.shadowColor = UIColor.black.cgColor
-        label.layer.shadowOffset = CGSize(width: 0.0, height: 1.0)
-        label.layer.shadowOpacity = 1.0
-        label.layer.shadowRadius = 5.0
-        label.layer.backgroundColor = UIColor.clear.cgColor
         
-        return label
+        self.titleGeoTextView.dropShadow(color: .black, opacity: 1, offset: CGSize.zero, radius: 5)
+        self.titleEngTextView.dropShadow(color: .black, opacity: 1, offset: CGSize.zero, radius: 5)
     }
 }

@@ -1,7 +1,7 @@
 PODS:
-  - Alamofire (4.6.0)
+  - Alamofire (4.7.0)
   - HTMLEntities (3.0.9)
-  - Kingfisher (4.6.2)
+  - Kingfisher (4.6.3)
   - SwiftyJSON (4.0.0)
 
 DEPENDENCIES:
@@ -20,9 +20,9 @@ CHECKOUT OPTIONS:
     :git: https://github.com/IBM-Swift/swift-html-entities.git
 
 SPEC CHECKSUMS:
-  Alamofire: f41a599bd63041760b26d393ec1069d9d7b917f4
+  Alamofire: 907e0a98eb68cdb7f9d1f541a563d6ac5dc77b25
   HTMLEntities: f117de937598406671591baa7829479213d4e4c2
-  Kingfisher: 55b9c395bf8d3949676ad3861111923990ab68cf
+  Kingfisher: 98e6d5b5e807645743e8ed5ececd25d688d38452
   SwiftyJSON: 070dabdcb1beb81b247c65ffa3a79dbbfb3b48aa
 
 PODFILE CHECKSUM: 81b545e377d11f8b3ee09885a20c13f1e0c3ac5c

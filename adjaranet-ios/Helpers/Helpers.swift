@@ -28,17 +28,3 @@ class Helpers {
         }
     }
 }
-
-extension String {
-    func titleCase() -> String {
-        return prefix(1).uppercased() + dropFirst()
-    }
-    
-    mutating func titleCase() {
-        self = self.titleCase()
-    }
-
-    func lowerCase() -> String {
-        return lowercased()
-    }
-}
