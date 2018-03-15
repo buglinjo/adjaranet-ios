@@ -8,7 +8,7 @@
 
 import UIKit
 
-class DetailsEpisodesTableViewCell: UITableViewCell {
+class DetailsEpisodeTableViewCell: UITableViewCell {
 
     override func awakeFromNib() {
         super.awakeFromNib()

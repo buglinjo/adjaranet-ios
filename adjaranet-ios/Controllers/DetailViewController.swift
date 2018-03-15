@@ -8,7 +8,7 @@
 
 import UIKit
 
-class DetailViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+class DetailViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, UIPickerViewDelegate, UIPickerViewDataSource {
     
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var closeButton: UIButton!
@@ -17,6 +17,7 @@ class DetailViewController: UIViewController, UITableViewDelegate, UITableViewDa
     @IBOutlet weak var expandArrow: UIImageView!
     @IBOutlet weak var playButton: UIButton!
     @IBOutlet weak var descriptionView: UITextView!
+    @IBOutlet weak var seasonPickerView: UIPickerView!
     
     var headerView = UIView()
     var initialHeaderHeight: CGFloat!
@@ -29,6 +30,10 @@ class DetailViewController: UIViewController, UITableViewDelegate, UITableViewDa
     var tableViewHeight: CGFloat?
     
     var expandArrowAlpha: CGFloat = 0.75
+    
+    var heightDelta: CGFloat = 100
+    
+    let pickerDataSource = ["სეზონი 1", "სეზონი 2", "სეზონი 3", "სეზონი 4", "სეზონი 5"];
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -46,6 +51,11 @@ class DetailViewController: UIViewController, UITableViewDelegate, UITableViewDa
         shadowView.dropShadow(color: .black, opacity: 1, offset: CGSize.zero, radius: 8)
         expandArrow.dropShadow(color: .black, opacity: 1, offset: CGSize.zero, radius: 10)
         playButton.dropShadow(color: .black, opacity: 0.4, offset: CGSize.zero, radius: 8)
+        
+        seasonPickerView.delegate = self
+        seasonPickerView.dataSource = self
+        
+        
         
         playButton.layer.cornerRadius = 5
         descriptionView.layer.cornerRadius = 5
@@ -69,7 +79,7 @@ class DetailViewController: UIViewController, UITableViewDelegate, UITableViewDa
             tableView.addSubview(footerView)
         }
         
-        initialHeaderHeight = view.frame.height
+        initialHeaderHeight = view.frame.height + heightDelta
         
         setupHeaderView()
     }
@@ -104,7 +114,7 @@ class DetailViewController: UIViewController, UITableViewDelegate, UITableViewDa
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "DetailsEpisodesTableViewCellId", for: indexPath) as! DetailsEpisodesTableViewCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: "DetailsEpisodeTableViewCellId", for: indexPath) as! DetailsEpisodeTableViewCell
         
         return cell
     }
@@ -117,6 +127,30 @@ class DetailViewController: UIViewController, UITableViewDelegate, UITableViewDa
         return UITableViewAutomaticDimension
     }
     
+    func numberOfComponents(in pickerView: UIPickerView) -> Int {
+        return 1
+    }
+    
+    func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
+        return pickerDataSource.count;
+    }
+    
+    func pickerView(_ pickerView: UIPickerView, viewForRow row: Int, forComponent component: Int, reusing view: UIView?) -> UIView {
+        let pickerLabel = UILabel()
+        let titleData = pickerDataSource[row]
+        let myTitle = NSAttributedString(string: titleData, attributes: [
+            NSAttributedStringKey.font: UIFont(name: "DejaVu Sans", size: 17)!,
+            NSAttributedStringKey.foregroundColor: UIColor.white
+            ])
+        pickerLabel.attributedText = myTitle
+        pickerLabel.textAlignment = .center
+        return pickerLabel
+    }
+    
+    func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
+        print(pickerDataSource[row])
+    }
+    
     func stretchyScroll() {
         var headerRect = CGRect(x: 0, y: -headerHeight, width: tableView.frame.width, height: headerHeight)
         
@@ -126,7 +160,7 @@ class DetailViewController: UIViewController, UITableViewDelegate, UITableViewDa
             tableViewHeightLocal = tvh
         }
         
-        var footerRect = CGRect(x: 0, y: headerHeight + tableViewHeightLocal, width: tableView.frame.width, height: footerHeight)
+        var footerRect = CGRect(x: 0, y: headerHeight + tableViewHeightLocal + heightDelta, width: tableView.frame.width, height: footerHeight)
         
         expandArrow.alpha = expandArrowAlpha - ((tableView.contentOffset.y + view.frame.height) / 100)
         
@@ -141,8 +175,8 @@ class DetailViewController: UIViewController, UITableViewDelegate, UITableViewDa
             if (tableView.contentOffset.y < -(initialHeaderHeight + maxStretch)) {
                 slideDownView()
             }
-        } else if tableView.contentOffset.y > tableViewHeightLocal - tableView.frame.height {
-            footerRect.origin.y = tableViewHeightLocal
+        } else if tableView.contentOffset.y > tableViewHeightLocal - (tableView.frame.height + heightDelta) {
+            footerRect.origin.y = tableViewHeightLocal + heightDelta
             footerRect.size.height = tableView.contentOffset.y
         }
         
@@ -160,7 +194,7 @@ class DetailViewController: UIViewController, UITableViewDelegate, UITableViewDa
     }
     
     override func willTransition(to newCollection: UITraitCollection, with coordinator: UIViewControllerTransitionCoordinator) {
-        initialHeaderHeight = view.frame.width
+        initialHeaderHeight = view.frame.width + heightDelta
         setupHeaderView()
         self.tableView.reloadData()
     }
