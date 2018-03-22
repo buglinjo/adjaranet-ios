@@ -18,6 +18,9 @@ class DetailViewController: UIViewController, UITableViewDelegate, UITableViewDa
     @IBOutlet weak var playButton: UIButton!
     @IBOutlet weak var descriptionView: UITextView!
     @IBOutlet weak var seasonPickerView: UIPickerView!
+    @IBOutlet weak var qualityButton: UIButton!
+    @IBOutlet weak var languageButton: UIButton!
+    @IBOutlet weak var downloadButton: UIButton!
     
     var headerView = UIView()
     var initialHeaderHeight: CGFloat!
@@ -55,10 +58,12 @@ class DetailViewController: UIViewController, UITableViewDelegate, UITableViewDa
         seasonPickerView.delegate = self
         seasonPickerView.dataSource = self
         
-        
-        
         playButton.layer.cornerRadius = 5
-        descriptionView.layer.cornerRadius = 5
+        
+        let downloadIcon = UIImage(named: "download")?.withRenderingMode(.alwaysTemplate)
+        
+        downloadButton.setImage(downloadIcon, for: .normal)
+        downloadButton.tintColor = .white
         
         expandArrow.alpha = expandArrowAlpha
         
